@@ -1,0 +1,185 @@
+GET http://localhost:1488/api/empleado HTTP/1.1
+//Mostrar Empleados
+###
+
+GET http://localhost:1488/api/empleado/3 HTTP/1.1
+//Mostrar Empleado por id
+###
+
+POST http://localhost:1488/api/empleado HTTP/1.1
+//Crear empleado
+Content-Type:  application/json
+
+{
+    "nombre": "Empleado2",
+    "apellidos": "emplead",
+    "edad": "30",
+    "sexo": "F",
+    "etnia": "arisa"
+}
+
+###
+
+PUT http://localhost:1488/api/empleado/7 HTTP/1.1
+//Actualizar empleado
+Content-Type:  application/json
+
+{
+    "nombre": "Djmirrrrrr",
+    "apellidos": "Vladimirov",
+    "edad": "26",
+    "sexo": "M",
+    "etnia": "extra-aria"
+
+}
+
+###
+DELETE http://localhost:1488/api/empleado/6 HTTP/1.1
+//Borrar empleado
+
+
+
+//Productos
+###
+GET http://localhost:1488/api/producto HTTP/1.1
+###
+
+GET http://localhost:1488/api/producto/1 HTTP/1.1
+//Mostrar Producto por id
+###
+POST http://localhost:1488/api/producto HTTP/1.1
+//Crear producto
+Content-Type:  application/json
+
+{
+    "descripcion": "Producto1",
+    "precio": 1.2,
+    "cantidad": "30"
+
+}
+
+###
+
+PUT http://localhost:1488/api/producto/1 HTTP/1.1
+//Actualizar producto
+Content-Type:  application/json
+
+    {
+    "descripcion": "Producto2",
+    "precio": "2.1",
+    "cantidad": "30"
+    }
+
+###
+DELETE http://localhost:1488/api/producto/1 HTTP/1.1
+//Borrar producto
+
+
+
+//Roles
+###
+GET http://localhost:1488/api/rol HTTP/1.1
+
+###
+
+GET http://localhost:1488/api/rol/1 HTTP/1.1
+//Mostrar rol por id
+
+###
+POST http://localhost:1488/api/rol HTTP/1.1
+//Crear rol
+Content-Type:  application/json
+
+{
+    "descripcion": "clean"
+
+}
+
+###
+
+PUT http://localhost:1488/api/rol/1 HTTP/1.1
+//Actualizar rol
+Content-Type:  application/json
+
+    {
+    "descripcion": "Bausss",
+    }
+
+###
+DELETE http://localhost:1488/api/rol HTTP/1.1
+//Borrar rol
+
+
+//Tiendas
+###
+GET http://localhost:1488/api/tienda HTTP/1.1
+
+###
+
+GET http://localhost:1488/api/tienda/1 HTTP/1.1
+//Mostrar Producto por id
+
+###
+POST http://localhost:1488/api/tienda HTTP/1.1
+//Crear producto
+Content-Type:  application/json
+
+{
+    "direccion": "avenida baus 1",
+    "ciudad": "baus",
+    "codigo_postal": "22221",
+    "pais": "avenida baus 1"
+
+}
+
+###
+
+PUT http://localhost:1488/api/tienda8/api/tienda/1 HTTP/1.1
+//Actualizar producto
+Content-Type:  application/json
+    {
+    "direccion": "avenida baus 1",
+    "ciudad": "avenida baus 1",
+    "codigo_postal": "avenida baus 1",
+    "pais": "avenida baus 1"
+    }
+
+###
+DELETE http://localhost:1488/api/tienda/1 HTTP/1.1
+//Borrar producto
+
+
+//Transacciones 
+###
+GET http://localhost:1488/api/transacciones HTTP/1.1
+
+###
+
+GET http://localhost:1488/api/transacciones/1 HTTP/1.1
+//Mostrar transacciones por id
+
+###
+POST http://localhost:1488/api/transacciones HTTP/1.1
+//Crear transaccion
+Content-Type:  application/json
+
+{
+    "tienda_id": "1",
+    "producto_id": "3",
+    "cantidad_producto": "9"
+}
+
+###
+
+PUT http://localhost:1488/api/transacciones/1 HTTP/1.1
+//Actualizar transaccion
+Content-Type:  application/json
+    {
+    "tienda_id": "1",
+    "producto_id": "2",
+    "cantidad_producto": "3"
+    }
+
+###
+DELETE http://localhost:1488/api/transacciones/1 HTTP/1.1
+//Borrar transaccion
